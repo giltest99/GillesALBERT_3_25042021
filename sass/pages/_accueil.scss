@@ -66,3 +66,17 @@
 
 
 
+
+// FOOTER
+.footer {
+    background-color: $bg-footer;
+    color: $text-white;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+}
+.footer__h3 {
+    margin: 1rem 0;
+}
+.footer__item {
+    margin: 0.5rem 0;
+}
