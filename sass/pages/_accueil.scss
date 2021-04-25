@@ -1,6 +1,8 @@
 // MAIN CONTAINER
 .main-container {
     width: 100%;
+    max-width: 1024px;
+    margin: auto;
 }
 
 // HEADER
@@ -23,7 +25,11 @@
         padding: 10px 0 0 10px;
         border-top: 2px solid $bg-darkgrey;
     }
+    &__span-map {
+        margin-right: 1rem;
+    }
 }
+
 
 // EXPLORER
 .explorer {

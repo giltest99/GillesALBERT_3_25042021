@@ -13,6 +13,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-container {
   width: 100%;
+  max-width: 1024px;
+  margin: auto;
 }
 
 .header {
@@ -32,6 +34,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
   padding: 10px 0 0 10px;
   border-top: 2px solid #D5D5D5;
+}
+.header__span-map {
+  margin-right: 1rem;
 }
 
 .explorer {
