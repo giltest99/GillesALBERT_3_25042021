@@ -78,7 +78,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   margin-bottom: 2rem;
 }
-
 .fonctionnement__desc--large {
   font-size: 1.5rem;
   font-weight: 600;
@@ -86,7 +85,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   margin-left: 20px;
 }
-
 .fonctionnement__ul {
   display: flex;
   flex-direction: column;
@@ -95,7 +93,6 @@ h1, h2, h3, h4, h5, h6 {
   align-content: center;
   margin: 10px 0;
 }
-
 .fonctionnement__li-item {
   width: 86%;
   height: 70px;
@@ -107,18 +104,15 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 1.8rem;
   box-shadow: 5px 5px 8px #EAEAEA;
 }
-
 .fonctionnement__li-item > span {
   margin-right: 2rem;
   color: #7E7E7E;
 }
-
 .fonctionnement__li-item:hover {
   background-color: #F5EDFF;
   cursor: pointer;
   box-shadow: 5px 5px 8px #D5D5D5;
 }
-
 .fonctionnement__li-item:hover > span {
   color: #9356DC;
 }
@@ -129,13 +123,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   padding: 0.5rem 1.5rem;
 }
-
 .footer__h3 {
   margin: 1rem 0;
 }
-
 .footer__item {
   margin: 0.5rem 0;
+}
+
+.footer span {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
