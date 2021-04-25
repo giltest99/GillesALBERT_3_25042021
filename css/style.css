@@ -54,13 +54,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 .explorer__a-btn {
   text-decoration: none;
-  background-color: #9356DC;
-  padding: 1rem;
-  border-radius: 40px;
-  height: 50px;
+  padding: 0.75rem;
+  border-radius: 30px;
+  height: 42px;
+  font-weight: 500;
   margin: 20px 0 0 10px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   color: white;
+  box-shadow: 4px 4px 4px #D5D5D5;
+  background: #9356DC;
+  background: -webkit-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  background: -moz-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
