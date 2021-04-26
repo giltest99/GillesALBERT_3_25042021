@@ -136,11 +136,20 @@
 
     &__item {
         margin: 0.5rem 0;
-    }   
+    }
+
+    &__contact-mailto {
+        text-decoration: none;
+        color: $text-white;
+    }
+    &__contact-mailto:hover {
+        color: $primary;
+    }
 }
 .footer span {
     margin-right: 1rem;
 }
+
 
 
 

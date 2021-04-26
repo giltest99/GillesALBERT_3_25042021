@@ -129,6 +129,13 @@ h1, h2, h3, h4, h5, h6 {
 .footer__item {
   margin: 0.5rem 0;
 }
+.footer__contact-mailto {
+  text-decoration: none;
+  color: white;
+}
+.footer__contact-mailto:hover {
+  color: #9356DC;
+}
 
 .footer span {
   margin-right: 1rem;
