@@ -1,11 +1,15 @@
-// MAIN CONTAINER
+/*
+MAIN CONTAINER
+*/
 .main-container {
     width: 100%;
     max-width: 1024px;
     margin: auto;
 }
 
-// HEADER
+/*
+HEADER
+*/
 .header {
     display: flex;
     flex-direction: column;
@@ -30,8 +34,9 @@
     }
 }
 
-
-// EXPLORER
+/*
+EXPLORER
+*/
 .explorer {
     display: flex;
     flex-direction: column;
@@ -70,7 +75,9 @@
     }
 }
 
-// FONCTIONNEMENT
+/*
+FONCTIONNEMENT
+*/
 .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -121,9 +128,28 @@
     }
 }
 
+/*
+RESTAURANTS
+*/
+.restaurants {
+    background-color: $bg-lightgrey;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: $margin-20;
+        margin-bottom: 1rem;
+        margin-left: 20px;
+    }
+}
 
 
-// FOOTER
+
+
+/*
+FOOTER
+*/
 .footer {
     background-color: $bg-footer;
     color: $text-white;

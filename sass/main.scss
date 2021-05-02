@@ -1,15 +1,18 @@
-// @import 'vendors';
-
 @import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+
+// @import 'vendors';
 
 @import 'base/base';
 
-// @import 'layout';
+@import 'components/components';
+@import 'components/card-image';
+
+@import 'layouts/layouts';
 
 @import 'pages/accueil';
 @import 'pages/menus';
-
-// @import 'components';
 
 // @import 'themes';
 
