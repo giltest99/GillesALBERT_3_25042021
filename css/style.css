@@ -206,17 +206,19 @@ FONCTIONNEMENT
   justify-content: center;
   align-items: center;
   align-content: center;
+  position: relative;
   margin: 10px 0;
   counter-reset: fonctionnementCount;
 }
 .fonctionnement__li-item {
   position: relative;
+  min-width: 250px;
   width: 86%;
   height: 70px;
   list-style: none;
   background-color: #F6F6F6;
   margin: 10px 0;
-  text-align: center;
+  padding-left: 20%;
   border-radius: 25px;
   padding-top: 1.8rem;
   box-shadow: 5px 5px 8px #EAEAEA;
@@ -233,7 +235,19 @@ FONCTIONNEMENT
   padding: 0.25rem 0.5rem;
 }
 .fonctionnement__li-item > span {
-  margin-right: 2rem;
+  color: #7E7E7E;
+  position: absolute;
+  left: 12.5%;
+}
+.fonctionnement__li-item:nth-child(1) > span {
+  color: #7E7E7E;
+  font-size: 1.25rem;
+  top: 25px;
+}
+.fonctionnement__li-item:nth-child(2) > span {
+  color: #7E7E7E;
+}
+.fonctionnement__li-item:nth-child(3) > span {
   color: #7E7E7E;
 }
 .fonctionnement__li-item:hover {
