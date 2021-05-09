@@ -22,8 +22,9 @@ Card with image
   margin-bottom: 2rem;
 }
 .cards__item {
+  width: 88%;
   height: 250px;
-  /*         margin: .5rem 0; */
+  margin: 0.5rem 0 0.5rem 0;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.2);

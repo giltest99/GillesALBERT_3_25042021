@@ -11,8 +11,9 @@ Card with image
     margin-bottom: 2rem;
 
     &__item {
+        width: 88%;
         height: 250px;
-/*         margin: .5rem 0; */
+        margin: .5rem 0 .5rem 0;
         background-color: white;
         border-radius: 1rem;
         box-shadow: 4px 4px 4px rgba($color: grey, $alpha: 0.2);
