@@ -1,0 +1,36 @@
+/*
+FOOTER ON ALL PAGES
+*/
+.footer {
+    background-color: $bg-footer;
+    color: $text-white;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+
+    &__h1 {
+        font-size: 1.25rem;
+        margin: 1rem 0;
+    }
+
+    &__item {
+        margin: 0.5rem 0;
+        list-style-type: none;
+    }
+
+    &__item:nth-child(1) i {
+        margin-right: .75rem;
+    }
+    
+    &__item:nth-child(2) i {
+        font-size: 0.75rem;
+        margin-right: .6rem;
+    }
+
+    &__contact-mailto {
+        text-decoration: none;
+        color: $text-white;
+    }
+    &__contact-mailto:hover {
+        color: $primary;
+    }
+}

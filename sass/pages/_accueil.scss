@@ -75,7 +75,6 @@ EXPLORER
         background: -webkit-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
         background: -moz-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
         background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
-
     }
 }
 
@@ -163,46 +162,5 @@ RESTAURANTS
         margin-left: 20px;
     }
 }
-
-
-
-
-/*
-FOOTER
-*/
-.footer {
-    background-color: $bg-footer;
-    color: $text-white;
-    font-weight: 600;
-    padding: 0.5rem 1.5rem;
-
-    &__h1 {
-        font-size: 1.25rem;
-        margin: 1rem 0;
-    }
-
-    &__item {
-        margin: 0.5rem 0;
-        list-style-type: none;
-    }
-
-    &__contact-mailto {
-        text-decoration: none;
-        color: $text-white;
-    }
-    &__contact-mailto:hover {
-        color: $primary;
-    }
-}
-.footer ul li:nth-child(1) i {
-    margin-right: .75rem;
-}
-
-.footer ul li:nth-child(2) i {
-    font-size: 0.75rem;
-    margin-right: .6rem;
-}
-
-
 
 
