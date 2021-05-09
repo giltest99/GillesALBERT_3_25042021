@@ -78,6 +78,24 @@ Card with image
   color: black;
 }
 
+.large-gradient-button {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  min-width: 185px;
+  height: 42px;
+  font-weight: 500;
+  margin: 20px 0 0 10px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+  box-shadow: 4px 4px 4px #D5D5D5;
+  background: #9356DC;
+  background: -webkit-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  background: -moz-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+}
+
 /*
 FOOTER ON ALL PAGES
 */
@@ -167,23 +185,6 @@ EXPLORER
   text-align: center;
   margin: 20px 0 0 10px;
 }
-.explorer__a-btn {
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  min-width: 185px;
-  height: 42px;
-  font-weight: 500;
-  margin: 20px 0 0 10px;
-  margin-bottom: 60px;
-  text-align: center;
-  color: white;
-  box-shadow: 4px 4px 4px #D5D5D5;
-  background: #9356DC;
-  background: -webkit-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
-  background: -moz-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
-  background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
-}
 
 /*
 FONCTIONNEMENT
@@ -213,6 +214,7 @@ FONCTIONNEMENT
 .fonctionnement__li-item {
   position: relative;
   min-width: 250px;
+  /*         max-width: 600px; */
   width: 86%;
   height: 70px;
   list-style: none;
