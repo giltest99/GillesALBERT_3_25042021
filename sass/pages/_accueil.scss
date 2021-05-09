@@ -45,6 +45,7 @@ EXPLORER
     background-color: $bg-lightgrey;
 
     &__p--large {
+        width: 88%;
         font-size: 1.5rem;
         font-weight: 600;
         text-align: $center-text;
@@ -52,6 +53,7 @@ EXPLORER
     }
 
     &__p--medium {
+        width: 88%;
         font-weight: 400;
         text-align: $center-text;
         margin: $margin-20;
@@ -59,7 +61,7 @@ EXPLORER
 
     &__a-btn {
         text-decoration: none;
-        padding: 0.75rem;
+        padding: 0.75rem 1.5rem;
         border-radius: 30px;
         height: 42px;
         font-weight: 500;
