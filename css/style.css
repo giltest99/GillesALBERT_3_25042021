@@ -139,10 +139,12 @@ EXPLORER
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   border-radius: 30px;
+  min-width: 185px;
   height: 42px;
   font-weight: 500;
   margin: 20px 0 0 10px;
   margin-bottom: 60px;
+  text-align: center;
   color: white;
   box-shadow: 4px 4px 4px #D5D5D5;
   background: #9356DC;
@@ -236,11 +238,13 @@ FOOTER
   font-weight: 600;
   padding: 0.5rem 1.5rem;
 }
-.footer__h3 {
+.footer__h1 {
+  font-size: 1.25rem;
   margin: 1rem 0;
 }
 .footer__item {
   margin: 0.5rem 0;
+  list-style-type: none;
 }
 .footer__contact-mailto {
   text-decoration: none;
@@ -250,8 +254,13 @@ FOOTER
   color: #9356DC;
 }
 
-.footer span {
-  margin-right: 1rem;
+.footer ul li:nth-child(1) i {
+  margin-right: 0.75rem;
+}
+
+.footer ul li:nth-child(2) i {
+  font-size: 0.75rem;
+  margin-right: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
