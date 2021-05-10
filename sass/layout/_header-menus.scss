@@ -1,0 +1,24 @@
+/*
+HEADER
+*/
+.header-menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: relative;
+
+    &__return-home {
+        position: absolute;
+        left: 2rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: black;
+    }
+
+    &__figure {
+        margin: 1rem 0 0.75rem 0;
+    }
+    
+}

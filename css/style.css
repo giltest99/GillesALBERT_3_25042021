@@ -7,7 +7,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2 {
+h1 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -96,6 +96,19 @@ Card with image
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
 }
 
+.menus-title {
+  border-radius: 30px 30px 0 0;
+  padding: 1rem;
+  position: relative;
+  margin-top: -30px;
+  background-color: #F6F6F6;
+}
+.menus-title span i {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
 /*
 FOOTER ON ALL PAGES
 */
@@ -129,9 +142,36 @@ FOOTER ON ALL PAGES
 }
 
 /*
+HEADER
+*/
+.header-menus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: relative;
+}
+.header-menus__return-home {
+  position: absolute;
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+.header-menus__figure {
+  margin: 1rem 0 0.75rem 0;
+}
+
+.menus-card {
+  background-color: #F6F6F6;
+  border-radius: 20px 20px 0 0;
+}
+
+/*
 MAIN CONTAINER
 */
-.main-container {
+.menu-container {
   width: 100%;
   max-width: 1024px;
   margin: auto;
@@ -275,6 +315,16 @@ RESTAURANTS
   margin: 20px 0 0 10px;
   margin-bottom: 1rem;
   margin-left: 20px;
+}
+
+/*
+MAIN MENUS CONTAINER
+*/
+.menus-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  background-color: #F6F6F6;
 }
 
 /*# sourceMappingURL=style.css.map */
