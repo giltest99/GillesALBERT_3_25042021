@@ -121,7 +121,7 @@ Card with image
   left: 0;
   font-family: "Shrikhand";
   opacity: 1;
-  animation: clear-loader 2s forwards;
+  animation: clear-loader 2.5s forwards;
 }
 .loader__lttr {
   color: #353535;
@@ -204,6 +204,7 @@ Card with image
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 /*
