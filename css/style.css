@@ -109,6 +109,103 @@ Card with image
   right: 2rem;
 }
 
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Shrikhand";
+  opacity: 1;
+  animation: clear-loader 2s forwards;
+}
+.loader__lttr {
+  color: #353535;
+  letter-spacing: 0.5rem;
+  transform: scale(1) translateY(0px);
+}
+.loader__lttr:nth-child(1) {
+  animation: blink-primary 0.5s;
+}
+.loader__lttr:nth-child(2) {
+  animation: blink-secondary 0.5s 0.25s;
+}
+.loader__lttr:nth-child(3) {
+  animation: blink-primary 0.5s 0.5s;
+}
+.loader__lttr:nth-child(4) {
+  animation: blink-third 0.5s 0.75s;
+}
+.loader__lttr:nth-child(5) {
+  animation: blink-primary 0.5s 1s;
+}
+.loader__lttr:nth-child(6) {
+  animation: blink-secondary 0.5s 1.25s;
+}
+.loader__lttr:nth-child(7) {
+  animation: blink-third 0.5s 1.5s;
+}
+.loader__lttr:nth-child(8) {
+  animation: blink-primary 0.5s 1.75s;
+}
+
+@keyframes blink-primary {
+  0% {
+    color: #353535;
+    transform: scale(1);
+  }
+  10% {
+    color: #9356DC;
+    transform: scale(2);
+  }
+  100% {
+    color: #353535;
+    transform: scale(1);
+  }
+}
+@keyframes blink-secondary {
+  0% {
+    color: #353535;
+    transform: scale(1);
+  }
+  10% {
+    color: #FF79DA;
+    transform: scale(2);
+  }
+  100% {
+    color: #353535;
+    transform: scale(1);
+  }
+}
+@keyframes blink-third {
+  0% {
+    color: #353535;
+    transform: scale(1);
+  }
+  10% {
+    color: #99E2D0;
+    transform: scale(2);
+  }
+  100% {
+    color: #353535;
+    transform: scale(1);
+  }
+}
+@keyframes clear-loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*
 FOOTER ON ALL PAGES
 */
@@ -171,7 +268,7 @@ HEADER
 /*
 MAIN CONTAINER
 */
-.menu-container {
+.main-container {
   width: 100%;
   max-width: 1024px;
   margin: auto;
