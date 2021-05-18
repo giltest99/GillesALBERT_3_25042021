@@ -1,9 +1,18 @@
 /*
 MAIN MENUS CONTAINER
 */
+body {
+    background-color: #F6F6F6;
+}
+
 .menus-container {
     width: 100%;
     max-width: 1024px;
     margin: auto;
     background-color: $bg-lightgrey;
+}
+
+.section-btn-commander {
+    margin: 2rem 0;
+    text-align: center;
 }

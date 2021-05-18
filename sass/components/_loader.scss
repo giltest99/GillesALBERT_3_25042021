@@ -14,7 +14,7 @@
 
     &__lttr {
         color: #353535;
-        letter-spacing: .5rem;
+        letter-spacing: .4rem;
         transform: scale(1) translateY(0px);
     
         &:nth-child(1) {
@@ -45,22 +45,23 @@
 }
 @keyframes blink-primary {
     0% { color: #353535; transform: scale(1) }
-    10% { color: $primary; transform: scale(2) }
+    10% { color: $primary; transform: scale(1.5) }
     100% { color: #353535; transform: scale(1) }
 }
 @keyframes blink-secondary {
     0% { color: #353535; transform: scale(1) }
-    10% { color: $secondary; transform: scale(2) }
+    10% { color: $secondary; transform: scale(1.5) }
     100% { color: #353535; transform: scale(1) }
 }
 @keyframes blink-third {
     0% { color: #353535; transform: scale(1) }
-    10% { color: $third; transform: scale(2) }
+    10% { color: $third; transform: scale(1.5) }
     100% { color: #353535; transform: scale(1) }
 }
 
 @keyframes clear-loader {
     0% { opacity: 1 }
     90% { opacity: 1 }
-    100% { opacity: 0; display: none; }
+    100% { opacity: 0; }
   }
+

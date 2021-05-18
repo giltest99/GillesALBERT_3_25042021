@@ -125,7 +125,7 @@ Card with image
 }
 .loader__lttr {
   color: #353535;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
   transform: scale(1) translateY(0px);
 }
 .loader__lttr:nth-child(1) {
@@ -160,7 +160,7 @@ Card with image
   }
   10% {
     color: #9356DC;
-    transform: scale(2);
+    transform: scale(1.5);
   }
   100% {
     color: #353535;
@@ -174,7 +174,7 @@ Card with image
   }
   10% {
     color: #FF79DA;
-    transform: scale(2);
+    transform: scale(1.5);
   }
   100% {
     color: #353535;
@@ -188,7 +188,7 @@ Card with image
   }
   10% {
     color: #99E2D0;
-    transform: scale(2);
+    transform: scale(1.5);
   }
   100% {
     color: #353535;
@@ -204,7 +204,6 @@ Card with image
   }
   100% {
     opacity: 0;
-    display: none;
   }
 }
 /*
@@ -261,9 +260,38 @@ HEADER
   margin: 1rem 0 0.75rem 0;
 }
 
-.menus-card {
+.menus-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 2rem;
+}
+.menus-cards-container__title {
+  text-transform: uppercase;
+  color: #6C6C6C;
+  border-bottom: 4px solid #99E2D0;
+  width: 18%;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.menus-cards-container__cards {
   background-color: #F6F6F6;
   border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98%;
+}
+.menus-cards-container__item {
+  margin: 0.5rem 0;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  list-style: none;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px #EAEAEA;
 }
 
 /*
@@ -273,8 +301,14 @@ MAIN CONTAINER
   width: 100%;
   max-width: 1024px;
   margin: auto;
+  /* animation: test-main 3s; */
 }
 
+/* @keyframes test-main {
+    0% {opacity: 0}
+    90% {opacity: 0}
+    100% {opacity: 1}
+} */
 /*
 HEADER
 */
@@ -418,11 +452,20 @@ RESTAURANTS
 /*
 MAIN MENUS CONTAINER
 */
+body {
+  background-color: #F6F6F6;
+}
+
 .menus-container {
   width: 100%;
   max-width: 1024px;
   margin: auto;
   background-color: #F6F6F6;
+}
+
+.section-btn-commander {
+  margin: 2rem 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
