@@ -288,10 +288,84 @@ HEADER
   position: relative;
   background-color: white;
   width: 100%;
+  height: 75px;
   list-style: none;
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0 4px 4px #EAEAEA;
+  overflow: hidden;
+}
+.menus-cards-container__item h3 {
+  width: 100%;
+}
+.menus-cards-container__item p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+.menus-cards-container__item p span {
+  display: inline-block;
+}
+.menus-cards-container__item p span:nth-child(1) {
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: "...";
+}
+.menus-cards-container__item p span:nth-child(2) {
+  font-weight: 900;
+}
+.menus-cards-container__item:hover {
+  cursor: pointer;
+}
+.menus-cards-container .content {
+  width: 20%;
+  height: 75px;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 0;
+  right: -20%;
+  transition: right 0.5s;
+}
+.menus-cards-container .menus-cards-container__item:hover {
+  cursor: pointer;
+}
+.menus-cards-container .menus-cards-container__item:hover p {
+  width: 80%;
+}
+.menus-cards-container .menus-cards-container__item:hover .content {
+  right: 0;
+}
+.menus-cards-container .menus-cards-container__item:hover .content .wheel {
+  animation: turning-wheel 0.5s 1 forwards;
+}
+.menus-cards-container .container-wheel {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.menus-cards-container .wheel {
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  font-size: 1rem;
+  font-weight: 900;
+  color: #99E2D0;
+}
+@keyframes turning-wheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*
