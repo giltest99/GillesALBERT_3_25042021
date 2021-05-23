@@ -271,7 +271,7 @@ HEADER
   text-transform: uppercase;
   color: #6C6C6C;
   border-bottom: 4px solid #99E2D0;
-  width: 18%;
+  width: 60px;
   line-height: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -295,12 +295,18 @@ HEADER
   box-shadow: 0 4px 4px #EAEAEA;
   overflow: hidden;
 }
+.menus-cards-container__item:hover {
+  cursor: pointer;
+}
 .menus-cards-container__item h3 {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: "...";
   transition: width 0.5s;
+}
+.menus-cards-container__item:hover h3 {
+  width: 80%;
 }
 .menus-cards-container__item p {
   display: flex;
@@ -323,10 +329,16 @@ HEADER
 .menus-cards-container__item p span:nth-child(2) {
   font-weight: 900;
 }
-.menus-cards-container__item:hover {
-  cursor: pointer;
+.menus-cards-container__item:hover p {
+  width: 80%;
 }
-.menus-cards-container .content {
+.menus-cards-container__item:hover .content {
+  right: 0;
+}
+.menus-cards-container__item:hover .content .wheel {
+  animation: turning-wheel 0.5s 1 forwards;
+}
+.menus-cards-container__item .content {
   width: 20%;
   height: 75px;
   background-color: #99E2D0;
@@ -335,29 +347,14 @@ HEADER
   right: -20%;
   transition: right 0.5s;
 }
-.menus-cards-container .menus-cards-container__item:hover {
-  cursor: pointer;
-}
-.menus-cards-container .menus-cards-container__item:hover h3 {
-  width: 80%;
-}
-.menus-cards-container .menus-cards-container__item:hover p {
-  width: 80%;
-}
-.menus-cards-container .menus-cards-container__item:hover .content {
-  right: 0;
-}
-.menus-cards-container .menus-cards-container__item:hover .content .wheel {
-  animation: turning-wheel 0.5s 1 forwards;
-}
-.menus-cards-container .container-wheel {
+.menus-cards-container__item .container-wheel {
   display: flex;
   flex-direction: center;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.menus-cards-container .wheel {
+.menus-cards-container__item .wheel {
   background-color: white;
   padding: 8px 10px;
   border-radius: 50%;
@@ -366,6 +363,7 @@ HEADER
   font-weight: 900;
   color: #99E2D0;
 }
+
 @keyframes turning-wheel {
   from {
     transform: rotate(0deg);
@@ -374,7 +372,6 @@ HEADER
     transform: rotate(360deg);
   }
 }
-
 /*
 MAIN CONTAINER
 */
