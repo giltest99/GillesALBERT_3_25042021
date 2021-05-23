@@ -297,6 +297,10 @@ HEADER
 }
 .menus-cards-container__item h3 {
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: "...";
+  transition: width 0.5s;
 }
 .menus-cards-container__item p {
   display: flex;
@@ -333,6 +337,9 @@ HEADER
 }
 .menus-cards-container .menus-cards-container__item:hover {
   cursor: pointer;
+}
+.menus-cards-container .menus-cards-container__item:hover h3 {
+  width: 80%;
 }
 .menus-cards-container .menus-cards-container__item:hover p {
   width: 80%;

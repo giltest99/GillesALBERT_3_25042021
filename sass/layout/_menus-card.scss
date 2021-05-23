@@ -37,6 +37,10 @@
 
         & h3 {
             width: 100%; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: "...";
+            transition: width .5s;
         }
 
         & p {
@@ -85,7 +89,10 @@
     .menus-cards-container__item:hover {
         cursor: pointer;
     }
-    .menus-cards-container__item:hover p{
+    .menus-cards-container__item:hover h3 {
+        width: 80%;
+    }
+    .menus-cards-container__item:hover p {
         width: 80%;
     }
     .menus-cards-container__item:hover .content {
