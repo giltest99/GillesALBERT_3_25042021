@@ -1,0 +1,28 @@
+.heart-select {
+	color: black;
+	background-clip: text;
+
+    &:hover {
+        cursor: pointer;
+        display: inline-block;
+        background:linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        opacity: 1;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        font-weight: bold;
+        animation: heart-painting .3s ease-in-out;
+    }
+}
+
+@keyframes heart-painting {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
