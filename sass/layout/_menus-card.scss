@@ -20,6 +20,7 @@
         flex-direction: column;
         justify-content: center;  
         width: 98%;
+        overflow: hidden;
     }
     &__item {
         margin: .5rem 0;
@@ -32,6 +33,23 @@
         border-radius: 15px;
         box-shadow: 0 4px 4px $bg-mediumgrey;
         overflow: hidden;
+
+        opacity: 0;
+        transform: translateY(0);
+        animation: item-appears 1s ease forwards;
+
+        &:nth-child(1) {
+            animation-delay: 0;
+        }
+        &:nth-child(2) {
+            animation-delay: .1s;
+        }
+        &:nth-child(3) {
+            animation-delay: .2s;
+        }
+        &:nth-child(4) {
+            animation-delay: .3s;
+        }
 
         &:hover {
             cursor: pointer;
@@ -104,7 +122,13 @@
     }   
 }
 
-// Animation
+// Animations
+
+@keyframes item-appears {
+    0% {opacity: 0; transform: translateY(100px);}
+    100% {opacity: 1}
+}
+
 @keyframes turning-wheel {
     from {transform:rotate(0deg)}
     to {transform:rotate(360deg)}
