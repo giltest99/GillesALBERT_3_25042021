@@ -1,11 +1,10 @@
 .heart-select {
 	color: black;
-	background-clip: text;
 
     &:hover {
         cursor: pointer;
         display: inline-block;
-        background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
         opacity: 1;
         background-clip: text;
         -webkit-background-clip: text;
