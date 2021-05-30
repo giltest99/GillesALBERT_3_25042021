@@ -5,41 +5,46 @@
     display: flex; 
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
     font-family: "Shrikhand";
-    opacity: 1;
-    animation: clear-loader 2.5s forwards;
+    animation: clear-loader 6s forwards;
+    
 
     &__lttr {
         color: #353535;
         letter-spacing: .4rem;
         transform: scale(1) translateY(0px);
+
+        & h1 {
+            text-transform: lowercase;
+        }
     
         &:nth-child(1) {
             animation: blink-primary .5s ;
         }
         &:nth-child(2) {
-            animation: blink-secondary .5s .25s ;
+            animation: blink-secondary .5s .2s ;
         }
         &:nth-child(3) {
-            animation: blink-primary .5s .5s ;
+            animation: blink-primary .5s .4s ;
         }
         &:nth-child(4) {
-            animation: blink-third .5s .75s ;
+            animation: blink-third .5s .6s ;
         }
         &:nth-child(5) {
-            animation: blink-primary .5s 1s ;
+            animation: blink-primary .5s .8s ;
         }
         &:nth-child(6) {
-            animation: blink-secondary .5s 1.25s ;
+            animation: blink-secondary .5s 1s ;
         }
         &:nth-child(7) {
-            animation: blink-third .5s 1.5s ;
+            animation: blink-third .5s 1.2s ;
         }
         &:nth-child(8) {
-            animation: blink-primary .5s 1.75s ;
+            animation: blink-primary .5s 1.4s ;
         }
     }
 }
@@ -61,7 +66,7 @@
 
 @keyframes clear-loader {
     0% { opacity: 1 }
-    90% { opacity: 1 }
-    100% { opacity: 0; }
+    80% { opacity: .8 }
+    100% { opacity: 0; z-index: -1000}
   }
 

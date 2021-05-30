@@ -89,11 +89,17 @@ Card with image
   margin-bottom: 60px;
   text-align: center;
   color: white;
-  box-shadow: 4px 4px 4px #D5D5D5;
-  background: #9356DC;
+  box-shadow: 0px 2px 4px #D5D5D5;
+  /*     background: #9356DC; */
   background: -webkit-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   background: -moz-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  transition: box-shadow 0.3s, background-color 0.2s;
+}
+
+.large-gradient-button:hover {
+  background: linear-gradient(to top, #9e67e0 0%, #ff8de0 100%);
+  box-shadow: 0px 2px 4px #353535;
 }
 
 .menus-title {
@@ -116,41 +122,44 @@ Card with image
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   font-family: "Shrikhand";
-  opacity: 1;
-  animation: clear-loader 2.5s forwards;
+  animation: clear-loader 6s forwards;
 }
 .loader__lttr {
   color: #353535;
   letter-spacing: 0.4rem;
   transform: scale(1) translateY(0px);
 }
+.loader__lttr h1 {
+  text-transform: lowercase;
+}
 .loader__lttr:nth-child(1) {
   animation: blink-primary 0.5s;
 }
 .loader__lttr:nth-child(2) {
-  animation: blink-secondary 0.5s 0.25s;
+  animation: blink-secondary 0.5s 0.2s;
 }
 .loader__lttr:nth-child(3) {
-  animation: blink-primary 0.5s 0.5s;
+  animation: blink-primary 0.5s 0.4s;
 }
 .loader__lttr:nth-child(4) {
-  animation: blink-third 0.5s 0.75s;
+  animation: blink-third 0.5s 0.6s;
 }
 .loader__lttr:nth-child(5) {
-  animation: blink-primary 0.5s 1s;
+  animation: blink-primary 0.5s 0.8s;
 }
 .loader__lttr:nth-child(6) {
-  animation: blink-secondary 0.5s 1.25s;
+  animation: blink-secondary 0.5s 1s;
 }
 .loader__lttr:nth-child(7) {
-  animation: blink-third 0.5s 1.5s;
+  animation: blink-third 0.5s 1.2s;
 }
 .loader__lttr:nth-child(8) {
-  animation: blink-primary 0.5s 1.75s;
+  animation: blink-primary 0.5s 1.4s;
 }
 
 @keyframes blink-primary {
@@ -199,15 +208,16 @@ Card with image
   0% {
     opacity: 1;
   }
-  90% {
-    opacity: 1;
+  80% {
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
+    z-index: -1000;
   }
 }
 .heart-select {
-  color: black;
+  /* color: black; */
 }
 .heart-select:hover {
   cursor: pointer;
@@ -344,7 +354,7 @@ HEADER
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: "...";
+  text-overflow: ellipsis;
   transition: width 0.5s;
 }
 .menus-cards-container__item:hover h3 {
@@ -357,6 +367,7 @@ HEADER
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   transition: width 0.5s;
 }
 .menus-cards-container__item p span {
@@ -366,7 +377,7 @@ HEADER
   white-space: nowrap;
   width: 80%;
   overflow: hidden;
-  text-overflow: "...";
+  text-overflow: ellipsis;
 }
 .menus-cards-container__item p span:nth-child(2) {
   font-weight: 900;
@@ -598,7 +609,7 @@ h1 {
 }
 
 .section-btn-commander {
-  margin: 2rem 0;
+  margin: 3rem 0 5rem 0;
   text-align: center;
 }
 

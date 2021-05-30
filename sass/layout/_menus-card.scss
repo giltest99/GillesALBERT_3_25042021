@@ -58,7 +58,7 @@
             width: 100%; 
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: "...";
+            text-overflow: ellipsis;
             transition: width .5s;
         }
         &:hover h3 {
@@ -71,6 +71,7 @@
             width: 100%;
             white-space: nowrap;
             overflow: hidden;
+            text-overflow: ellipsis;
             transition: width .5s;
         }
         & p span {
@@ -80,7 +81,7 @@
             white-space: nowrap; 
             width: 80%; 
             overflow: hidden;
-            text-overflow: "...";
+            text-overflow: ellipsis;
         }
         & p span:nth-child(2) {
             font-weight: 900;
