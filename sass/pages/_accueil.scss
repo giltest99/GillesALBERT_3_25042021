@@ -108,7 +108,7 @@ FONCTIONNEMENT
         border-radius: 25px;
         padding-top: 1.8rem;
         box-shadow: 5px 5px 8px $bg-mediumgrey;
-        
+        transition: background-color .2s, box-shadow .2s;
     }
 
     &__li-item::before {    

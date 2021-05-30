@@ -17,6 +17,11 @@ Card with image
         background-color: white;
         border-radius: 1rem;
         box-shadow: 4px 4px 4px rgba($color: grey, $alpha: 0.2);
+        transition: box-shadow .2s;
+
+        &:hover {
+            box-shadow: 4px 4px 6px rgba($color: grey, $alpha: 0.6);
+        }
     }
     &__top {
         display: flex;

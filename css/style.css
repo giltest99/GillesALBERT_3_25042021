@@ -28,6 +28,10 @@ Card with image
   background-color: white;
   border-radius: 1rem;
   box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.2);
+  transition: box-shadow 0.2s;
+}
+.cards__item:hover {
+  box-shadow: 4px 4px 6px rgba(128, 128, 128, 0.6);
 }
 .cards__top {
   display: flex;
@@ -537,6 +541,7 @@ FONCTIONNEMENT
   border-radius: 25px;
   padding-top: 1.8rem;
   box-shadow: 5px 5px 8px #EAEAEA;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 .fonctionnement__li-item::before {
   counter-increment: fonctionnementCount;
