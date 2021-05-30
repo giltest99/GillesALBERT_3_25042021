@@ -39,6 +39,7 @@ Card with image
 }
 .cards__img-container {
   height: 180px;
+  position: relative;
 }
 .cards__img-container img {
   height: 180px;
@@ -246,6 +247,16 @@ Card with image
     opacity: 1;
   }
 }
+.badge-new {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  font-weight: 700;
+}
+
 /*
 FOOTER ON ALL PAGES
 */

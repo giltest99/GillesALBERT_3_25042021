@@ -29,13 +29,14 @@ Card with image
     }
     &__img-container {
         height: 180px;
+        position: relative;
     }
     &__img-container img {
         height: 180px;
         width: 100%;
         object-fit: cover;
         object-position: 50% 100%;
-        border-radius: 1rem 1rem 0 0;
+        border-radius: 1rem 1rem 0 0;    
     }
     &__img-container--vertical-image img {
         object-position: 50% 62.5%;
