@@ -213,8 +213,8 @@ Card with image
   0% {
     opacity: 1;
   }
-  80% {
-    opacity: 0.8;
+  90% {
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
@@ -255,6 +255,8 @@ Card with image
   background-color: #99E2D0;
   color: #1b6150;
   font-weight: 700;
+  border-radius: 2px;
+  opacity: 0.9;
 }
 
 /*
@@ -351,7 +353,7 @@ HEADER
   animation: item-appears 1s ease forwards;
 }
 .menus-cards-container__item:nth-child(1) {
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 .menus-cards-container__item:nth-child(2) {
   animation-delay: 0.1s;
@@ -417,7 +419,7 @@ HEADER
 }
 .menus-cards-container__item .container-wheel {
   display: flex;
-  flex-direction: center;
+  /* flex-direction: center; */
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -622,6 +624,12 @@ h1 {
   max-width: 1024px;
   margin: auto;
   /* background-color: $bg-lightgrey; */
+}
+
+.menus-title {
+  font-family: "shrikhand";
+  font-size: 1.5rem;
+  /* text-transform: capitalize; */
 }
 
 .section-btn-commander {

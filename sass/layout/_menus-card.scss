@@ -39,7 +39,7 @@
         animation: item-appears 1s ease forwards;
 
         &:nth-child(1) {
-            animation-delay: 0;
+            animation-delay: 0s;
         }
         &:nth-child(2) {
             animation-delay: .1s;
@@ -106,7 +106,7 @@
         }
         & .container-wheel {
             display: flex;
-            flex-direction: center;
+            /* flex-direction: center; */
             justify-content: center;
             align-items: center;
             height: 100%;
