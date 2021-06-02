@@ -221,9 +221,6 @@ Card with image
     z-index: -1000;
   }
 }
-.heart-select {
-  /* color: black; */
-}
 .heart-select:hover {
   cursor: pointer;
   display: inline-block;
