@@ -95,7 +95,6 @@ Card with image
   text-align: center;
   color: white;
   box-shadow: 0px 2px 4px #D5D5D5;
-  /*     background: #9356DC; */
   background: -webkit-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   background: -moz-linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
@@ -123,28 +122,29 @@ Card with image
 .loader {
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: #F6F6F6;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 1;
   z-index: 1000;
   font-family: "Shrikhand";
-  animation: clear-loader 6.5s forwards;
+  animation: clear-loader 2.25s forwards;
 }
 .loader__lttr {
   color: #353535;
   letter-spacing: 0.4rem;
   transform: scale(1);
+  opacity: 1;
 }
 .loader__lttr h1 {
   text-transform: lowercase;
 }
 .loader__lttr:nth-child(1) {
-  animation: blink-primary 0.5s;
+  animation: blink-primary 0.5s forwards;
 }
 .loader__lttr:nth-child(2) {
   animation: blink-secondary 0.5s 0.25s;
@@ -175,7 +175,7 @@ Card with image
   }
   10% {
     color: #9356DC;
-    transform: scale(1.5);
+    transform: scale(1.75);
   }
   100% {
     color: #353535;
@@ -189,7 +189,7 @@ Card with image
   }
   10% {
     color: #FF79DA;
-    transform: scale(1.5);
+    transform: scale(1.75);
   }
   100% {
     color: #353535;
@@ -203,7 +203,7 @@ Card with image
   }
   10% {
     color: #99E2D0;
-    transform: scale(1.5);
+    transform: scale(1.75);
   }
   100% {
     color: #353535;
@@ -215,7 +215,8 @@ Card with image
     opacity: 1;
   }
   90% {
-    opacity: 0.9;
+    opacity: 1;
+    z-index: 1000;
   }
   100% {
     opacity: 0;
@@ -237,9 +238,6 @@ Card with image
 @keyframes heart-painting {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -454,16 +452,12 @@ MAIN CONTAINER
 */
 .main-container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1920px;
   margin: auto;
-  /* animation: test-main 3s; */
+  z-index: 100;
+  opacity: 1;
 }
 
-/* @keyframes test-main {
-    0% {opacity: 0}
-    90% {opacity: 0}
-    100% {opacity: 1}
-} */
 /*
 HEADER
 */
@@ -536,7 +530,7 @@ FONCTIONNEMENT
   align-items: center;
   align-content: center;
   position: relative;
-  margin: 10px 0;
+  margin: 0.25rem 0 3rem 0;
   counter-reset: fonctionnementCount;
 }
 .fonctionnement__li-item {

@@ -3,16 +3,11 @@ MAIN CONTAINER
 */
 .main-container {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1920px;
     margin: auto;
-    /* animation: test-main 3s; */
+    z-index: 100;
+    opacity: 1;
 }
-
-/* @keyframes test-main {
-    0% {opacity: 0}
-    90% {opacity: 0}
-    100% {opacity: 1}
-} */
 
 /*
 HEADER
@@ -91,7 +86,7 @@ FONCTIONNEMENT
         align-items: center;
         align-content: center;
         position: relative;
-        margin: 10px 0;
+        margin: .25rem 0 3rem 0;
         counter-reset: fonctionnementCount;
     }
 

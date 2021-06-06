@@ -1,73 +1,73 @@
+$blink-time: .5s;
 .loader {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: $bg-lightgrey;
     display: flex; 
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     opacity: 1;
     z-index: 1000;
     font-family: "Shrikhand";
-    animation: clear-loader 6.5s forwards;
+    animation: clear-loader 2.25s forwards;
     
-
     &__lttr {
         color: $bg-footer;
         letter-spacing: .4rem;
         transform: scale(1);
-
+        opacity: 1;
+        
         & h1 {
             text-transform: lowercase;
         }
     
         &:nth-child(1) {
-            animation: blink-primary .5s ;
+            animation: blink-primary $blink-time forwards;
         }
         &:nth-child(2) {
-            animation: blink-secondary .5s .25s ;
+            animation: blink-secondary $blink-time .25s ;
         }
         &:nth-child(3) {
-            animation: blink-primary .5s .5s ;
+            animation: blink-primary $blink-time .5s ;
         }
         &:nth-child(4) {
-            animation: blink-third .5s .75s ;
+            animation: blink-third $blink-time .75s ;
         }
         &:nth-child(5) {
-            animation: blink-primary .5s 1s ;
+            animation: blink-primary $blink-time 1s ;
         }
         &:nth-child(6) {
-            animation: blink-secondary .5s 1.25s ;
+            animation: blink-secondary $blink-time 1.25s ;
         }
         &:nth-child(7) {
-            animation: blink-third .5s 1.5s ;
+            animation: blink-third $blink-time 1.5s ;
         }
         &:nth-child(8) {
-            animation: blink-primary .5s 1.75s ;
+            animation: blink-primary $blink-time 1.75s ;
         }
     }
 }
 @keyframes blink-primary {
     0% { color: $bg-footer; transform: scale(1) }
-    10% { color: $primary; transform: scale(1.5) }
+    10% { color: $primary; transform: scale(1.75) }
     100% { color: $bg-footer; transform: scale(1) }
 }
 @keyframes blink-secondary {
     0% { color: $bg-footer; transform: scale(1) }
-    10% { color: $secondary; transform: scale(1.5) }
+    10% { color: $secondary; transform: scale(1.75) }
     100% { color: $bg-footer; transform: scale(1) }
 }
 @keyframes blink-third {
     0% { color: $bg-footer; transform: scale(1) }
-    10% { color: $third; transform: scale(1.5) }
+    10% { color: $third; transform: scale(1.75) }
     100% { color: $bg-footer; transform: scale(1) }
 }
 
 @keyframes clear-loader {
     0% { opacity: 1 }
-    90% { opacity: .9 }
-    100% { opacity: 0; z-index: -1000 }
+    90% { opacity: 1; z-index: 1000 }
+    100% { opacity: 0; z-index: -1000}
   }
-
