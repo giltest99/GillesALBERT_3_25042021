@@ -88,6 +88,10 @@ FONCTIONNEMENT
         position: relative;
         margin: .25rem 0 3rem 0;
         counter-reset: fonctionnementCount;
+
+        @media screen and (min-width: 900px) {
+            flex-direction: row;
+        }
     }
 
     &__li-item {
@@ -104,6 +108,11 @@ FONCTIONNEMENT
         padding-top: 1.8rem;
         box-shadow: 5px 5px 8px $bg-mediumgrey;
         transition: background-color .2s, box-shadow .2s;
+
+        @media screen and (min-width: 900px) {
+            margin: 0 1rem;
+            padding-left: 10%;
+        }
     }
 
     &__li-item::before {    
@@ -166,3 +175,6 @@ RESTAURANTS
 }
 
 
+/* @media screen and (min-width: 900px) {
+    
+} */

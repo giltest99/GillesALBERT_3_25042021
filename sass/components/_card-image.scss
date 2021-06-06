@@ -6,8 +6,13 @@ Card with image
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 2rem; */
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 900px)  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
     &__item {
         width: 90%;
@@ -17,6 +22,10 @@ Card with image
         border-radius: 1rem;
         box-shadow: 4px 4px 4px rgba($color: grey, $alpha: 0.2);
         transition: box-shadow .2s;
+
+        @media screen and (min-width: 900px)  {
+            width: 45%;
+        }
 
         &:hover, &:hover a {
             box-shadow: 4px 4px 6px rgba($color: grey, $alpha: 0.6);
@@ -72,7 +81,6 @@ Card with image
         color: black;
     }
 }
-
 
 
 

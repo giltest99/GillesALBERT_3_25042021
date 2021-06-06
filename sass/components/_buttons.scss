@@ -20,5 +20,5 @@ $bg-linear-2: #FF79DA;
 
 .large-gradient-button:hover {
     background: linear-gradient(to top, lighten($bg-linear-1, 4%) 0%, lighten($bg-linear-2, 4%) 100%);
-    box-shadow: 0px 2px 4px $bg-footer;
+    box-shadow: 0px 2px 6px $bg-footer;
 }
