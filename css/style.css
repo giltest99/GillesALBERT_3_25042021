@@ -384,7 +384,8 @@ HEADER
 }
 @media screen and (min-width: 900px) {
   .menus-cards-container__item {
-    width: 30%;
+    width: 32%;
+    height: 100px;
   }
 }
 .menus-cards-container__item:nth-child(1) {
@@ -451,6 +452,11 @@ HEADER
   top: 0;
   right: -20%;
   transition: right 0.5s;
+}
+@media screen and (min-width: 900px) {
+  .menus-cards-container__item .content {
+    height: 100px;
+  }
 }
 .menus-cards-container__item .container-wheel {
   display: flex;
@@ -689,8 +695,13 @@ h1 {
 }
 .menus-figure img {
   height: 100%;
-  object-fit: cover;
-  object-position: 50% 75%;
+}
+@media screen and (min-width: 900px) {
+  .menus-figure img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

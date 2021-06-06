@@ -33,7 +33,11 @@ h1 {
 
     & img {
         height: 100%;
-        object-fit: cover;
-        object-position: 50% 75%;
+        
+        @media screen and (min-width: 900px) {
+            height: 400px;
+            object-fit: cover;
+            object-position: 50% 75%;
+        }
     }
 }

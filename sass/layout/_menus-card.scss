@@ -44,7 +44,8 @@
         animation: item-appears 1s ease forwards;
 
         @media screen and (min-width: 900px) {
-            width: 30%;
+            width: 32%;
+            height: 100px;
         }
 
         &:nth-child(1) {
@@ -111,7 +112,11 @@
             position: absolute;
             top: 0;
             right: -20%;
-            transition: right .5s;   
+            transition: right .5s;
+            
+            @media screen and (min-width: 900px) {
+                height: 100px;
+            }
         }
         & .container-wheel {
             display: flex;
