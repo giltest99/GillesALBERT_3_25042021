@@ -20,7 +20,7 @@ Card with image
   align-items: center;
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,9 +36,10 @@ Card with image
   box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.2);
   transition: box-shadow 0.2s;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .cards__item {
     width: 45%;
+    height: 350px;
   }
 }
 .cards__item:hover, .cards__item:hover a {
@@ -52,12 +53,23 @@ Card with image
   height: 180px;
   position: relative;
 }
+@media screen and (min-width: 700px) {
+  .cards__img-container {
+    height: 280px;
+  }
+}
 .cards__img-container img {
   height: 180px;
   width: 100%;
   object-fit: cover;
   object-position: 50% 100%;
   border-radius: 1rem 1rem 0 0;
+}
+@media screen and (min-width: 700px) {
+  .cards__img-container img {
+    height: 280px;
+    object-position: 50% 75%;
+  }
 }
 .cards__img-container--vertical-image img {
   object-position: 50% 62.5%;
@@ -320,6 +332,10 @@ HEADER
   margin: 1rem 0 0.75rem 0;
 }
 
+/* @media screen and (min-width: 900px) {
+    height: 120px;
+}
+ */
 .menus-cards-container {
   display: flex;
   flex-direction: column;
@@ -344,6 +360,13 @@ HEADER
   width: 98%;
   overflow: hidden;
 }
+@media screen and (min-width: 900px) {
+  .menus-cards-container__cards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 .menus-cards-container__item {
   margin: 0.5rem 0;
   position: relative;
@@ -358,6 +381,11 @@ HEADER
   opacity: 0;
   transform: translateY(0);
   animation: item-appears 1s ease forwards;
+}
+@media screen and (min-width: 900px) {
+  .menus-cards-container__item {
+    width: 30%;
+  }
 }
 .menus-cards-container__item:nth-child(1) {
   animation-delay: 0s;
@@ -649,6 +677,20 @@ h1 {
 .section-btn-commander {
   margin: 3rem 0 5rem 0;
   text-align: center;
+}
+
+.menus-figure {
+  height: 250px;
+}
+@media screen and (min-width: 900px) {
+  .menus-figure {
+    height: 400px;
+  }
+}
+.menus-figure img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 75%;
 }
 
 /*# sourceMappingURL=style.css.map */
